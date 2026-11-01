@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Natural Vibes about photography, prints, and collaborations.">
+    <title>Contact | Natural Vibes</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js" defer></script>
+</head>
+<body>
+    <main class="contact-page">
+        <header class="site-header">
+            <a class="brand" href="index.html">Natural Vibes</a>
+            <a class="home-link" href="index.html">Back to home</a>
+        </header>
+
+        <section class="contact-card" aria-labelledby="contact-title">
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h1 id="contact-title">Get in touch</h1>
+            <p class="intro">Have a question about a photograph, a project in mind, or just want to say hello? Send a note below.</p>
+
+            <form id="contact-form">
+                <div class="field-row">
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject" type="text" placeholder="What would you like to talk about?" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" maxlength="1000" placeholder="Write your message here..." required></textarea>
+                    <span class="character-count" id="character-count">0 / 1000</span>
+                </div>
+
+                <button type="submit">Send message <span aria-hidden="true">&rarr;</span></button>
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                <p class="form-note">This demo form doesn't send messages yet.</p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
