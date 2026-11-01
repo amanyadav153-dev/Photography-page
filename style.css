@@ -118,3 +118,7 @@ font-style: normal;
 #check:checked ~ .btn_one i{
     opacity: 0;
 }
+
+.main-photo h1{
+          color: azure;
+}
